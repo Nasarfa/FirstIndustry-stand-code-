@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Project]">
+  <test thread-count="5" name="Pending LeaveRequest Validation Test Cases(failed)">
+    <classes>
+      <class name="testcases.PendingLeaveRequestTestCase">
+        <methods>
+          <include name="teardown"/>
+          <include name="launchbroweser"/>
+          <include name="verifypendingleaverequest"/>
+        </methods>
+      </class> <!-- testcases.PendingLeaveRequestTestCase -->
+    </classes>
+  </test> <!-- Pending LeaveRequest Validation Test Cases(failed) -->
+  <test thread-count="5" name="User Role Validation Test Case(failed)">
+    <classes>
+      <class name="testcases.UserRoleTestCase">
+        <methods>
+          <include name="teardown"/>
+          <include name="launchbroweser"/>
+          <include name="verifyuserroleandstatus"/>
+        </methods>
+      </class> <!-- testcases.UserRoleTestCase -->
+    </classes>
+  </test> <!-- User Role Validation Test Case(failed) -->
+  <test thread-count="5" name="Assign Leave Request(failed)">
+    <classes>
+      <class name="testcases.AssignLeave">
+        <methods>
+          <include name="addedleaverequest"/>
+          <include name="teardown"/>
+          <include name="launchbroweser"/>
+        </methods>
+      </class> <!-- testcases.AssignLeave -->
+    </classes>
+  </test> <!-- Assign Leave Request(failed) -->
+  <test thread-count="5" name="Approved Leave Request(failed)">
+    <classes>
+      <class name="testcases.ApprovedLeave">
+        <methods>
+          <include name="teardown"/>
+          <include name="selectactions"/>
+          <include name="launchbroweser"/>
+        </methods>
+      </class> <!-- testcases.ApprovedLeave -->
+    </classes>
+  </test> <!-- Approved Leave Request(failed) -->
+</suite> <!-- Failed suite [Orange HRM Project] -->
