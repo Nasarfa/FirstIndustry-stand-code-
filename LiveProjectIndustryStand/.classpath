@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="/Users/nasar/Downloads/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/nasar/Downloads/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="/Users/nasar/Downloads/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/nasar/Downloads/mail-1.4.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

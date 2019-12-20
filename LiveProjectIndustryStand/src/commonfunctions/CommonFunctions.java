@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -21,10 +20,10 @@ public class CommonFunctions {
 
 	public static Properties properties=null;
 	public static WebDriver driver=null;
-    public static ExtentReports extentreport;
-    public static ExtentHtmlReporter htmlreport;
-    public static ExtentTest testcase;
-    Logger logger=Logger.getLogger(CommonFunctions.class);
+	public static ExtentReports extentreport;
+	public static ExtentHtmlReporter htmlreport;
+	public static ExtentTest testcase;
+	Logger logger=Logger.getLogger(CommonFunctions.class);
 	public Properties propertiesload() throws IOException {
 		FileInputStream fileInputStream = new FileInputStream("config.properties");
 		properties = new Properties();
@@ -60,9 +59,9 @@ public class CommonFunctions {
 	}
 	@AfterSuite
 	public void teardown() {
-		logger.info("Test Case executed successfully and Browser exist");
+		logger.info("Test Case executed successfully and Browser existed");
 		extentreport.flush();
-    driver.quit();
+		driver.quit();
 	}
 
 
